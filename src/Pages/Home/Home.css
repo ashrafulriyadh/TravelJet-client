@@ -1,0 +1,112 @@
+/* banner styles */
+.banner {
+	background-image: url('../../images/slider.jpg');
+	height: 80vh;
+	width: 100%;
+	position: absolute;
+	background-repeat: no-repeat;
+
+}
+
+/* custom margin class */
+.custom-margin {
+	margin-top: 280px;
+}
+/* heading style */
+.heading{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: 15%;
+	text-align: center;
+}
+
+/* service container styles */
+.service-container{
+	margin-top: 100px;
+	text-align: center;
+}
+
+.user-content p {
+    margin-top: 5px;
+    font-size: 14px
+}
+
+/* spinner styles */
+.spinner {
+	margin-top: 300px;
+}
+
+.ratings i {
+    color: goldenrod;
+}
+
+/* Ripple In animation style */
+@-webkit-keyframes hvr-ripple-in {
+	100% {
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  opacity: 1;
+	}
+  }
+  @keyframes hvr-ripple-in {
+	100% {
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  opacity: 1;
+	}
+  }
+  .hvr-ripple-in {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+  }
+  .hvr-ripple-in:before {
+	content: '';
+	position: absolute;
+	border: #e1e1e1 solid 4px;
+	top: -12px;
+	right: -12px;
+	bottom: -12px;
+	left: -12px;
+	opacity: 0;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+  }
+  .hvr-ripple-in:hover:before, .hvr-ripple-in:focus:before, .hvr-ripple-in:active:before {
+	-webkit-animation-name: hvr-ripple-in;
+	animation-name: hvr-ripple-in;
+  }
+
+
+ /* responsive for mobile device */
+
+@media (max-width: 576px) {
+	.banner {
+		height: 650px;
+		width: 100%;
+	}
+	.heading{
+		position: absolute;
+		margin-top: 200px;
+		margin-right: 10px;
+		margin-left: -5px;
+		text-align: center;
+	}
+	.custom-margin {
+		margin-top: 300px;
+	}
+	.spinner {
+		margin-top: 200px;
+	}
+	#search-btn {
+		margin-left: 30px;
+		margin-top: 10px;
+	}
+ }
